@@ -1,0 +1,16 @@
+<h2>携帯電話登録</h2>
+
+<%= form_for @cellphone do |f| %>
+  <%= render "devise/shared/error_messages", resource: @cellphone %>
+
+  <div class="field">
+    <%= f.label :cellphone %><br />
+    <%= f.text_field :number %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
